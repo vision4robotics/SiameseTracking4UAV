@@ -132,6 +132,6 @@ python tools/eval.py                              \
 
 - We would like to thank Jilin Zhao, Kunhui Chen, Haobo Zuo and Sihang Li their help in building this code library.
 
-- We also thank the contribution of Matthias Muller, Siyi Li, Dawei Du, and Heng Fan for their previous work of the benchmarks UAV123@10fps, UAV20L, DTB70, UAVDT, and VisDrone-SOT2020-test, and UAVTrack112.
+- We also thank the contribution of Matthias Muller, Siyi Li, Dawei Du, and Heng Fan for their previous work of the benchmarks UAV123@10fps, UAV20L, DTB70, UAVDT, and VisDrone-SOT2020-test.
 
 
