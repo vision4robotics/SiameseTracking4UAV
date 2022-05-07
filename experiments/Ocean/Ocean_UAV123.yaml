@@ -1,0 +1,8 @@
+TEST:
+  UAV123:
+    penalty_k: 0.08
+    lr: 0.305
+    window_influence: 0.44
+    small_sz: 127
+    big_sz: 287
+
