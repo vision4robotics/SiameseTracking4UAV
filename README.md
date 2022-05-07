@@ -86,9 +86,11 @@ python tools/eval.py                              \
 
 
 ## Acknowledgements
-The code is implemented based on [pysot](https://github.com/STVIR/pysot). We would like to express our sincere thanks to the contributors.
+- The code is implemented based on [pysot](https://github.com/STVIR/pysot). We would like to express our sincere thanks to the contributors.
 
-We also thank the contribution of Matthias Muller, Siyi Li, Dawei Du, Heng Fan, and Changhong Fu for their previous work of the benchmarks UAV123@10fps, UAV20L, DTB70, UAVDT, VisDrone-SOT2020, and UAVTrack112. Their papers and benchmark address are listed here.
+- We would like to thank Jilin Zhao, Kunhui Chen, Haobo Zuo and Sihang Li their help in building this code library.
+
+- We also thank the contribution of Matthias Muller, Siyi Li, Dawei Du, Heng Fan, and Changhong Fu for their previous work of the benchmarks UAV123@10fps, UAV20L, DTB70, UAVDT, VisDrone-SOT2020, and UAVTrack112. Their papers and benchmark address are listed here.
 
 ### UAV123@10fps & UAV20L
 
