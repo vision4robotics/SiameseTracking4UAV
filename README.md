@@ -33,15 +33,14 @@ The trackers are tested on the following platform.
 
 Here shows some of the tracking results of 19 SOTA Siamese trackers.
 
-
-#### DTB70
-
+Comparison of the performance under all the six authoritative UAV tracking benchmarks.
 <img src="./figures/Precision and FPS.png">
 
 <img src="./figures/Normalized Precision and FPS.png">
 
 <img src="./figures/Success and FPS.png">
 
+The average performance comparison of the five real-time Siamese trackers under all the six authoritative UAV tracking benchmarks.
 <img src="./figures/Attributes.png">
 
 ## Environment setup
