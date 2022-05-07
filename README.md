@@ -27,7 +27,7 @@ The trackers are tested on the following platform.
 - Python 3.6.3
 - Pytorch 0.7.0/1.6.0
 
-**All the Siamese trackers' results are obtained using an NVIDIA Jetson AGX Xavier.**
+**All the Siamese trackers' results are obtained using an [NVIDIA Jetson AGX Xavier](https://developer.nvidia.com/embedded/jetson-agx-xavier-developer-kit).**
 
 ## Figures
 
@@ -59,7 +59,7 @@ Download testing datasets and put them into `test_dataset` directory. If you wan
 
 The papers whose benchmarks are used in the experimental evaluations are listed here.
 
-### UAV123@10fps & UAV20L
+#### UAV123@10fps & UAV20L
 
 Paper: A Benchmark and Simulator for UAV Tracking
 
@@ -67,7 +67,7 @@ Paper site: https://link.springer.com/chapter/10.1007%2F978-3-319-46448-0_27 .
 
 Code and benchmark site: https://cemse.kaust.edu.sa/ivul/uav123 .
 
-### DTB70
+#### DTB70
 
 Paper: Visual Object Tracking for Unmanned Aerial Vehicles: A Benchmark and New Motion Models
 
@@ -75,7 +75,7 @@ Paper site: https://dl.acm.org/doi/10.5555/3298023.3298169 .
 
 Code and benchmark site: https://github.com/flyers/drone-tracking .
 
-### UAVDT
+#### UAVDT
 
 Paper: The Unmanned Aerial Vehicle Benchmark: Object Detection and Tracking
 
@@ -83,7 +83,7 @@ Paper site: https://link.springer.com/article/10.1007/s11263-019-01266-1 .
 
 Code and benchmark site: https://sites.google.com/site/daviddo0323/projects/uavdt .
 
-### VisDrone-SOT2020
+#### VisDrone-SOT2020
 
 Paper: VisDrone-SOT2020: The Vision Meets Drone Single Object Tracking Challenge Results
 
@@ -91,7 +91,7 @@ Paper site: https://link.springer.com/chapter/10.1007/978-3-030-66823-5_44 .
 
 Code and benchmark site: http://aiskyeye.com/ .
 
-### UAVTrack112
+#### UAVTrack112
 
 Paper: Onboard Real-Time Aerial Tracking With Efficient Siamese Anchor Proposal Network
 
