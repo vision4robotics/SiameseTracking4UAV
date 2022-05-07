@@ -27,7 +27,7 @@ The trackers are tested on the following platform.
 - Python 3.6.3
 - Pytorch 0.7.0/1.6.0
 
-**All the Siamese trackers' results are obtained using an [NVIDIA Jetson AGX Xavier](https://developer.nvidia.com/embedded/jetson-agx-xavier-developer-kit).**
+**All the Siamese trackers' results are obtained using an [NVIDIA Jetson AGX Xavier](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-agx-xavier/).**
 
 ## Figures
 
@@ -44,7 +44,7 @@ The average performance comparison of the five real-time Siamese trackers under 
 <img src="./figures/Attributes.png">
 
 ## Environment setup
-This code has been tested on an [NVIDIA Jetson AGX Xavier](https://developer.nvidia.com/embedded/jetson-agx-xavier-developer-kit) with Ubuntu 18.04, Python 3.6.3, Pytorch 0.7.0/1.6.0, CUDA 10.2.
+This code has been tested on an [NVIDIA Jetson AGX Xavier](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-agx-xavier/) with Ubuntu 18.04, Python 3.6.3, Pytorch 0.7.0/1.6.0, CUDA 10.2.
 
 Please install related libraries before running this code: 
 ```bash
