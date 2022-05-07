@@ -11,7 +11,7 @@ The submitted version of our paper has been uploaded to arXiv which can be found
 
 https://arxiv.org/abs/******.
 
-If you want to use our experimental results or related content, please cite our paper using the format as follows:
+If you want to use our code libary, experimental results and related contents, please cite our paper using the format as follows:
 
 @ARTICLE{******}
 
@@ -44,7 +44,7 @@ The average performance comparison of the five real-time Siamese trackers under 
 <img src="./figures/Attributes.png">
 
 ## Environment setup
-This code has been tested on an  NVIDIA Jetson AGX Xavier with Ubuntu 18.04, Python 3.6.3, Pytorch 0.7.0/1.6.0, CUDA 10.2.
+This code has been tested on an [NVIDIA Jetson AGX Xavier](https://developer.nvidia.com/embedded/jetson-agx-xavier-developer-kit) with Ubuntu 18.04, Python 3.6.3, Pytorch 0.7.0/1.6.0, CUDA 10.2.
 
 Please install related libraries before running this code: 
 ```bash
@@ -57,40 +57,7 @@ Download pretrained models form the links in `experiments` directory or download
 
 Download testing datasets and put them into `test_dataset` directory. If you want to test the tracker on a new dataset, please refer to [pysot-toolkit](https://github.com/StrangerZhang/pysot-toolkit) to set test_dataset.
 
-Take the test of SiamAPN as an example:
-
-```
-python tools/test_siamapn.py                      \
-  --dataset UAVTrack112                           \ # dataset_name
-  --datasetpath ./test_dataset                    \ # dataset_path
-  --config ./experiments/SiamAPN/config.yaml      \ # tracker_config
-  --snapshot ./experiments/SiamAPN/config.yaml    \ # tracker_model
-  --trackername SiamAPN                             # tracker_name
-```
-
-The testing result will be saved in the `results/<dataset_name>/<tracker_name>` directory.
-
-The settings required by different trackers will be different. For details, please refer to the examples in 'tools/test.sh'
-
-## Evaluation 
-
-If you want to evaluate the trackers mentioned above, please put those results into `results` directory as `results/<dataset_name>/<tracker_name>`.
-
-```
-python tools/eval.py                              \
-  --dataset UAVTrack112                           \ # dataset_name
-  --datasetpath path/of/your/dataset              \ # dataset_path
-  --tracker_path ./results                        \ # result_path
-  --tracker_prefix 'SiamAPN'                        # tracker_name
-```
-
-
-## Acknowledgements
-- The code is implemented based on [pysot](https://github.com/STVIR/pysot). We would like to express our sincere thanks to the contributors.
-
-- We would like to thank Jilin Zhao, Kunhui Chen, Haobo Zuo and Sihang Li their help in building this code library.
-
-- We also thank the contribution of Matthias Muller, Siyi Li, Dawei Du, Heng Fan, and Changhong Fu for their previous work of the benchmarks UAV123@10fps, UAV20L, DTB70, UAVDT, VisDrone-SOT2020, and UAVTrack112. Their papers and benchmark address are listed here.
+The papers whose benchmarks are used in the experimental evaluations are listed here.
 
 ### UAV123@10fps & UAV20L
 
@@ -131,3 +98,40 @@ Paper: Onboard Real-Time Aerial Tracking With Efficient Siamese Anchor Proposal 
 Paper site: https://ieeexplore.ieee.org/abstract/document/9477413 .
 
 Code and benchmark site: https://github.com/vision4robotics/SiamAPN .
+
+Take the test of SiamAPN as an example:
+
+```
+python tools/test_siamapn.py                      \
+  --dataset UAVTrack112                           \ # dataset_name
+  --datasetpath ./test_dataset                    \ # dataset_path
+  --config ./experiments/SiamAPN/config.yaml      \ # tracker_config
+  --snapshot ./experiments/SiamAPN/config.yaml    \ # tracker_model
+  --trackername SiamAPN                             # tracker_name
+```
+
+The testing result will be saved in the `results/<dataset_name>/<tracker_name>` directory.
+
+The settings required by different trackers will be different. For details, please refer to the examples in 'tools/test.sh'
+
+## Evaluation 
+
+If you want to evaluate the trackers mentioned above, please put those results into `results` directory as `results/<dataset_name>/<tracker_name>`.
+
+```
+python tools/eval.py                              \
+  --dataset UAVTrack112                           \ # dataset_name
+  --datasetpath path/of/your/dataset              \ # dataset_path
+  --tracker_path ./results                        \ # result_path
+  --tracker_prefix 'SiamAPN'                        # tracker_name
+```
+
+
+## Acknowledgements
+- The code is implemented based on [pysot](https://github.com/STVIR/pysot). We would like to express our sincere thanks to the contributors.
+
+- We would like to thank Jilin Zhao, Kunhui Chen, Haobo Zuo and Sihang Li their help in building this code library.
+
+- We also thank the contribution of Matthias Muller, Siyi Li, Dawei Du, and Heng Fan for their previous work of the benchmarks UAV123@10fps, UAV20L, DTB70, UAVDT, and VisDrone-SOT2020-test, and UAVTrack112.
+
+
