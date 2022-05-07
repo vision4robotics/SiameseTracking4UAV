@@ -1,0 +1,22 @@
+MODEL: "SESiamFCResNet22"
+TRACKER:
+  OTB2013: # 0.6814
+    scale_step: 1.145
+    scale_lr: 0.08
+    scale_penalty: 1.0
+    w_influence: 0.3
+  OTB2015: # 0.6608
+    scale_step: 1.1633
+    scale_lr: 0.171
+    scale_penalty: 0.9995
+    w_influence: 0.251
+  VOT2016: # 0.3636 (eao)
+    scale_step: 1.105
+    scale_lr: 0.43
+    scale_penalty: 1.0
+    w_influence: 0.3
+  VOT2017: # 0.2701 (eao)
+    scale_step: 1.0633
+    scale_lr: 0.349
+    scale_penalty: 0.9725
+    w_influence: 0.224

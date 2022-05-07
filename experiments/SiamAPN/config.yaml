@@ -1,0 +1,83 @@
+META_ARC: "SiamAPN_alexnet"
+
+BACKBONE:
+    TYPE: "alexnet"
+    PRETRAINED:  'alexnet-bn.pth'         
+    TRAIN_LAYERS: ['layer3','layer4','layer5'] 
+    TRAIN_EPOCH: 10 
+    LAYERS_LR: 0.1
+
+TRACK:
+    TYPE: 'SiamAPNtracker'
+    EXEMPLAR_SIZE: 127
+    INSTANCE_SIZE: 287
+    CONTEXT_AMOUNT: 0.5 
+    STRIDE: 8
+    PENALTY_K: 0.08 
+    LR: 0.302
+    w1: 1.18
+    w2: 1.0
+    w3: 1.0
+
+TRAIN:
+    EPOCH: 50  
+    START_EPOCH: 0  
+    BATCH_SIZE: 124
+    NUM_GPU: 2 
+    BASE_LR: 0.005
+    RESUME: ''
+    WEIGHT_DECAY : 0.0001
+    PRETRAINED: ''
+    OUTPUT_SIZE: 21 
+    NUM_WORKERS: 8
+    LOC_WEIGHT: 1.0 
+    CLS_WEIGHT: 1.0
+    SHAPE_WEIGHT: 1.0 
+    w1: 1.2
+    w2: 1.0
+    w3: 1.0
+    w4: 1.0
+    w5: 1.0
+    POS_NUM : 16
+    TOTAL_NUM : 64
+    NEG_NUM : 16
+    LARGER: 1.0 
+    range : 1.0 
+    LR:
+        TYPE: 'log'
+        KWARGS:
+            start_lr: 0.01 
+            end_lr: 0.0005 
+
+    LR_WARMUP:
+        TYPE: 'step'
+        EPOCH: 5 
+        KWARGS:
+            start_lr: 0.005
+            end_lr: 0.01
+            step: 1
+
+DATASET:
+    NAMES: 
+    - 'VID'   
+    - 'COCO'
+    - 'GOT'
+    - 'YOUTUBEBB'  
+
+
+    TEMPLATE:
+        SHIFT: 4 
+        SCALE: 0.05 
+        BLUR: 0.0
+        FLIP: 0.0 
+        COLOR: 1.0
+
+    SEARCH:
+        SHIFT: 64 
+        SCALE: 0.18 
+        BLUR: 0.2
+        FLIP: 0.0
+        COLOR: 1.0
+
+    NEG: 0.05
+    GRAY: 0.0
