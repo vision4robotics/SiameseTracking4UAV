@@ -150,6 +150,13 @@ python tools/eval.py                              \
   --tracker_prefix 'SiamAPN'                        # tracker_name
 ```
 
+## Contact
+
+If you have any questions, please contact me.
+
+Kunhan Lu
+
+Email: lukunhan@tongji.edu.cn .
 
 ## Acknowledgements
 - The code is implemented based on [pysot](https://github.com/STVIR/pysot). We would like to express our sincere thanks to the contributors.
