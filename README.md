@@ -1,7 +1,7 @@
 # [SiameseTracking4UAV]
 # Siamese Object Tracking for Unmanned Aerial Vehicle: A Review and Comprehensive Analysis
 
-### Changhong Fu, Kunhan Lu, Guangze Zheng, Junjie Ye, Ziang Cao, and Bowen Li
+### Changhong Fu, Kunhan Lu, Guangze Zheng, Junjie Ye, Ziang Cao, Bowen Li, and Geng Lu
 
 This code library gives our experimental results and most of the publicly available Siamese trackers.
 
@@ -15,7 +15,7 @@ If you want to use our code libary, experimental results and related contents, p
 
 @article{Fu2022SiameseOT,  
         title={{Siamese Object Tracking for Unmanned Aerial Vehicle: A Review and Comprehensive Analysis}},   
-        author={Fu, Changhong and Lu, Kunhan and Zheng, Guangze and Ye, Junjie and Cao, Ziang and Li, Bowen},  
+        author={Fu, Changhong and Lu, Kunhan and Zheng, Guangze and Ye, Junjie and Cao, Ziang and Li, Bowen and Lu, Geng},  
         journal={arXiv preprint arXiv:2205.04281},  
         year={2022},  
         pages={1-33}  
