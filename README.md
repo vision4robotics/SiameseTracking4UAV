@@ -136,7 +136,7 @@ python tools/test_siamapn.py                      \
   --dataset UAVTrack112                           \ # dataset_name
   --datasetpath ./test_dataset                    \ # dataset_path
   --config ./experiments/SiamAPN/config.yaml      \ # tracker_config
-  --snapshot ./experiments/SiamAPN/config.yaml    \ # tracker_model
+  --snapshot ./experiments/SiamAPN/model.pth      \ # tracker_model
   --trackername SiamAPN                             # tracker_name
 ```
 
