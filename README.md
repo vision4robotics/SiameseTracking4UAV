@@ -129,6 +129,9 @@ Paper site: https://arxiv.org/abs/2203.10541 .
 
 Code and benchmark site: https://vision4robotics.github.io/NAT2021/ .
 
+### Option 1
+
+Use the corresponding 'tools/test_<tracker_name>.py' to test the performance of the tracker.
 Take the test of SiamAPN as an example:
 
 ```
@@ -143,6 +146,19 @@ python tools/test_siamapn.py                      \
 The testing result will be saved in the `results/<dataset_name>/<tracker_name>` directory.
 
 The settings required by different trackers will be different. For details, please refer to the examples in 'tools/test.sh'
+
+### Option 2
+
+Similar to Option 1, a more convenient way of testing is provided using 'tools/test.py' to test all the trackers.
+
+```
+python tools/test.py                      \
+  --dataset UAVTrack112                           \ # dataset_name
+  --datasetpath ./test_dataset                    \ # dataset_path
+  --config ./experiments/SiamAPN/config.yaml      \ # tracker_config
+  --snapshot ./experiments/SiamAPN/model.pth      \ # tracker_model
+  --trackername SiamAPN                             # tracker_name
+```
 
 ## Evaluation 
 
