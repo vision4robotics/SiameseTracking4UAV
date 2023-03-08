@@ -1,5 +1,5 @@
 # Copyright (c) 2019 MegviiDetection.
-# Parts of this code come from https://github.com/MegviiDetection/video_analyst .
+# Parts of this code come from https://github.com/MegviiDetection/video_analyst
 from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
@@ -28,8 +28,10 @@ parser.add_argument('--dataset', default='', type=str,
                     help='datasets')
 parser.add_argument('--datasetpath', default='', type=str,
                     help='the path of datasets')
-parser.add_argument('--config', default='../experiments/SiamFC++/siamfcpp_googlenet.yaml', type=str,
+parser.add_argument('--config', default='./experiments/SiamFC++/siamfcpp_googlenet.yaml', type=str,
                     help='config file')
+parser.add_argument('--snapshot', default='./experiments/SiamFC++/siamfcpp-googlenet.pkl', type=str,
+                    help='snapshot of models to eval')
 parser.add_argument('--video', default='', type=str,
                     help='eval one special video')
 parser.add_argument('--vis', default='', action='store_true',
@@ -42,6 +44,7 @@ args = parser.parse_args()
 def main():
     # experiment config
     cfg.merge_from_file(args.config)
+    cfg['test']['track']['model']['task_model']['SiamTrack']['pretrain_model_path'] = args.snapshot
     task, task_cfg = specify_task(cfg['test'])
     task_cfg.freeze()
 
