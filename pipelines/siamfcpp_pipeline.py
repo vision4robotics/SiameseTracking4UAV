@@ -17,9 +17,12 @@ class SiamFCppPipeline():
     def __init__(self, args):
         super(SiamFCppPipeline, self).__init__()
         if not args.config:
-            args.config = './experiments/SiamFC++/siamfcpp_alexnet.yaml'
+            args.config = './experiments/SiamFC++/siamfcpp_googlenet.yaml'
+        if not args.config:
+            args.snapshot = './experiments/SiamFC++/siamfcpp-googlenet.pkl'
 
         cfg.merge_from_file(args.config)
+        cfg['test']['track']['model']['task_model']['SiamTrack']['pretrain_model_path'] = args.snapshot
         task, task_cfg = specify_task(cfg['test'])
         task_cfg.freeze()
         self.model = model_builder.build("track", task_cfg.model)
