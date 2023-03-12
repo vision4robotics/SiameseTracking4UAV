@@ -13,6 +13,7 @@ https://arxiv.org/abs/2205.04281 .
 
 If you want to use our code libary, experimental results and related contents, please cite our paper using the format as follows:
 
+'''
 @article{Fu2022SiameseOT,  
         title={{Siamese Object Tracking for Unmanned Aerial Vehicle: A Review and Comprehensive Analysis}},   
         author={Fu, Changhong and Lu, Kunhan and Zheng, Guangze and Ye, Junjie and Cao, Ziang and Li, Bowen and Lu, Geng},  
@@ -20,6 +21,7 @@ If you want to use our code libary, experimental results and related contents, p
         year={2022},  
         pages={1-33}  
 }
+'''
 
 ## Results_OPE_AGX
 
