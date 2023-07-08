@@ -11,15 +11,15 @@ The submitted version of our paper has been uploaded to arXiv which can be found
 
 https://arxiv.org/abs/2205.04281 .
 
-If you want to use our code libary, experimental results and related contents, please cite our paper using the format as follows:
+If you want to use our code libary, experimental results, and related contents, please cite our paper using the format as follows:
 
 ```
-@article{Fu2022SiameseOT,  
+@article{Fu2023SiameseOT,  
         title={{Siamese Object Tracking for Unmanned Aerial Vehicle: A Review and Comprehensive Analysis}},   
         author={Fu, Changhong and Lu, Kunhan and Zheng, Guangze and Ye, Junjie and Cao, Ziang and Li, Bowen and Lu, Geng},  
-        journal={arXiv preprint arXiv:2205.04281},  
-        year={2022},  
-        pages={1-33}  
+        journal={Artificial Intelligence Review},  
+        year={2023},  
+        pages={1-77}  
 }
 ```
 
@@ -127,7 +127,7 @@ Code and benchmark site: https://github.com/vision4robotics/SCT .
 
 Paper: Unsupervised Domain Adaptation for Nighttime Aerial Tracking
 
-Paper site: https://arxiv.org/abs/2203.10541 .
+Paper site: https://ieeexplore.ieee.org/document/9879981 .
 
 Code and benchmark site: https://vision4robotics.github.io/NAT2021/ .
 
