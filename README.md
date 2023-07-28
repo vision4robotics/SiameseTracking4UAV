@@ -3,13 +3,14 @@
 
 ### Changhong Fu, Kunhan Lu, Guangze Zheng, Junjie Ye, Ziang Cao, Bowen Li, and Geng Lu
 
-This work has been accepted and published by Artificial Intelligence Review (JCR Q1, IF = 12),
+This work has been accepted and published by Artificial Intelligence Review (JCR Q1, IF = 12).
 
 This code library gives our experimental results and most of the publicly available Siamese trackers.
 
 The trackers are in folder **experiments** and the results are in **results**.
 
 Paper link: https://link.springer.com/article/10.1007/s10462-023-10558-5
+
 View-only link: https://rdcu.be/dhWgD
 
 If you want to use our code libary, experimental results, and related contents, please cite our paper using the format as follows:
