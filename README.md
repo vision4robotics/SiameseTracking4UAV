@@ -1,15 +1,16 @@
-# [SiameseTracking4UAV]
+# [SiameseTracking4UAV](https://link.springer.com/article/10.1007/s10462-023-10558-5)
 # Siamese Object Tracking for Unmanned Aerial Vehicle: A Review and Comprehensive Analysis
 
 ### Changhong Fu, Kunhan Lu, Guangze Zheng, Junjie Ye, Ziang Cao, Bowen Li, and Geng Lu
+
+This work has been accepted and published by Artificial Intelligence Review (JCR Q1, IF = 12),
 
 This code library gives our experimental results and most of the publicly available Siamese trackers.
 
 The trackers are in folder **experiments** and the results are in **results**.
 
-The submitted version of our paper has been uploaded to arXiv which can be found at:
-
-https://arxiv.org/abs/2205.04281 .
+Paper link: https://link.springer.com/article/10.1007/s10462-023-10558-5
+View-only link: https://rdcu.be/dhWgD
 
 If you want to use our code libary, experimental results, and related contents, please cite our paper using the format as follows:
 
@@ -19,7 +20,8 @@ If you want to use our code libary, experimental results, and related contents, 
         author={Fu, Changhong and Lu, Kunhan and Zheng, Guangze and Ye, Junjie and Cao, Ziang and Li, Bowen and Lu, Geng},  
         journal={Artificial Intelligence Review},  
         year={2023},  
-        pages={1-77}  
+        pages={1-61},
+        doi={10.1007/s10462-023-10558-5}  
 }
 ```
 
