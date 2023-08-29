@@ -157,7 +157,7 @@ The settings required by different trackers will be different. For details, plea
 Similar to Option 1, a more convenient way of testing is provided using 'tools/test.py' to test all the trackers.
 
 ```
-python tools/test.py                      \
+python tools/test.py                              \
   --dataset UAVTrack112                           \ # dataset_name
   --datasetpath ./test_dataset                    \ # dataset_path
   --config ./experiments/SiamAPN/config.yaml      \ # tracker_config
