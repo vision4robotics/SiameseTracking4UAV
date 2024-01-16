@@ -16,13 +16,15 @@ View-only link: https://rdcu.be/dhWgD
 If you want to use our code libary, experimental results, and related contents, please cite our paper using the format as follows:
 
 ```
-@article{Fu2023SiameseOT,  
-        title={{Siamese Object Tracking for Unmanned Aerial Vehicle: A Review and Comprehensive Analysis}},   
-        author={Fu, Changhong and Lu, Kunhan and Zheng, Guangze and Ye, Junjie and Cao, Ziang and Li, Bowen and Lu, Geng},  
-        journal={Artificial Intelligence Review},  
-        year={2023},  
-        pages={1-61},
-        doi={10.1007/s10462-023-10558-5}  
+@article{Fu2023SiameseOT,
+        title={{Siamese Object Tracking for Unmanned Aerial Vehicle: A Review and Comprehensive Analysis}},
+        author={Fu, Changhong and Lu, Kunhan and Zheng, Guangze and Ye, Junjie and Cao, Ziang and Li, Bowen and Lu, Geng},
+        journal={Artificial Intelligence Review},
+        volume={56},
+        number={Suppl 1},
+        pages={1417-1477},
+        year={2023},
+        doi={10.1007/s10462-023-10558-5}
 }
 ```
 
